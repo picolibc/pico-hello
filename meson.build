@@ -55,8 +55,6 @@ lib_crt = picolibc_project.get_variable('lib_crt')
 
 lib_c = picolibc_project.get_variable('lib_c')
 
-lib_m = picolibc_project.get_variable('lib_m')
-
 lib_semihost = picolibc_project.get_variable('lib_semihost')
 
 inc = picolibc_project.get_variable('inc')
@@ -71,6 +69,6 @@ link_args = [
 executable('pico-hello',
 	   'pico-hello.c',
 	   link_args: link_args,
-	   link_with : [lib_crt, lib_m, lib_c, lib_semihost],
+	   link_with : [lib_crt, lib_c, lib_semihost],
 	   include_directories: inc,
 	   install : false)

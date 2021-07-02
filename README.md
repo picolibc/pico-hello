@@ -38,5 +38,5 @@ Assuming that has gone OK, you can now run the application:
 
 This should print out some messages and then exit:
 
-	hello world from picolibc version 1.5.1
+	hello world from picolibc version 1.7
 		sin(1) = 0.841471

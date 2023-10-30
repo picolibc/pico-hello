@@ -37,7 +37,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-static volatile double one = 1.0;
+static const volatile double one = 1.0;
 
 int
 main(void)

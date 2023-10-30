@@ -42,7 +42,6 @@ project('pico-hello', 'c',
 	license: 'BSD',
 	meson_version: '>= 0.50',
 	version: '0.1',
-	cross: 'cross-cortex-m3.txt',
        )
 
 picolibc_project = subproject('picolibc',

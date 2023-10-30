@@ -1,2 +1,2 @@
 #!/bin/sh
-exec meson --cross-file 'cross-cortex-m3.txt' build "$@"
+meson setup --cross-file 'cross-cortex-m3.txt' build "$@"

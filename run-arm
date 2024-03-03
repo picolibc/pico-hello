@@ -76,7 +76,7 @@ case "$cpu_arch"/"$cpu_profile" in
                 cpu=cortex-a7
                 ;;
         esac
-        ;;        
+        ;;
     v7/Microcontroller)
         cpu=cortex-m3
         ;;
@@ -98,7 +98,7 @@ case "$cpu_arch"/"$cpu_profile" in
                 ;;
         esac
         ;;
-    
+
     v8-M.*/Microcontroller)
         case "$fp_arch" in
             FPv5/FP-D16)
@@ -177,7 +177,7 @@ case $cpu in
         esac
 	memory="-m 1G"
         ;;
-        
+
     # The 'none' machine supports many non-M
     # processors
     ti925t|arm*|cortex-a*|cortex-r*)
@@ -189,7 +189,7 @@ esac
 
 #
 # Make sure the target machine and cpu is supported by qemu
-# 
+#
 if $qemu -machine help | grep -q "^$machine "; then
     if $qemu -machine $machine -cpu help | grep -q "^ *$cpu"; then
         :
@@ -262,7 +262,7 @@ echo "$input" > "$input_file"
       -cpu "$cpu" \
       -device loader,file="$elf",cpu-num=0 \
       -nographic \
-      "$@" < $input_file 
+      "$@" < $input_file
 
 result=$?
 

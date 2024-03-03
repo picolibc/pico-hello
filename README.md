@@ -34,7 +34,7 @@ Once that has finished, you can build the project:
 
 Assuming that has gone OK, you can now run the application:
 
-	$ ../run-arm
+	$ ../run-arm pico-hello
 
 This should print out some messages and then exit:
 
